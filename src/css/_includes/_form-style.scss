@@ -1,0 +1,53 @@
+$inputWidth: 18+rem;
+/*-- FORM --*/
+input, button, select, textarea, label {
+  font-size: inherit;
+}
+.form {
+  display: inline-block;
+  border: .1rem solid #e0e0e0;
+  border-radius: 1rem;
+  background: #f0f0f0;
+  padding: 1rem;
+}
+.form__fieldset {
+  padding: .5rem;
+}
+.form__legend {
+  margin: .5rem;
+}
+
+.form__button {
+  box-sizing: border-box;
+  display: block;
+  border: .1rem solid #e0e0e0;
+  border-radius: .5rem;
+  padding: .7rem;
+  margin: .7rem 0;
+  width: $inputWidth;
+  background-color: #ccc;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: #555;
+    color: #fff;
+    transition: .3s ease;
+  }
+}
+.form__input {
+  box-sizing: border-box;
+  display: block;
+  border: .1rem solid #e0e0e0;
+  padding: .7rem;
+  margin: .7rem 0;
+  width: $inputWidth;
+
+  &:hover, &:focus {
+    outline: .2rem solid #ffdb4d;
+    border-color: #ffdb4d;
+    transition: outline-color .3s ease, border-color .3s ease;
+  }
+}
+.hidden {
+  display: none;
+}

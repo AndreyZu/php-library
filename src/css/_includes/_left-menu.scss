@@ -1,0 +1,38 @@
+body{
+  padding: 1rem 1rem 1rem 30rem;
+}
+.left-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f0f0f0;
+  max-width: 30rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  border-right: .1rem dashed #ccc;
+  overflow-x: hidden;
+}
+.left-menu__header {
+  padding: 1.5rem 0;
+}
+.left-menu__links {
+  display: flex;
+  flex-direction: column;
+}
+.left-menu__link {
+  padding: 1rem;
+  color: #007;
+  text-decoration: none;
+  border-radius: .5rem;
+
+  &:visited {
+    color: #707;
+  }
+  &:hover, &:focus {
+    background-color: #555;
+    color: #fff;
+    transition: .3s ease;
+  }
+}

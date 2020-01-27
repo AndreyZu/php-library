@@ -1,0 +1,30 @@
+@import '_includes/_common';
+@import '_includes/_left-menu';
+@import '_includes/_form-style';
+
+/*-- MESSAGE --*/
+.message {
+  padding: 1rem;
+  color: #fff;
+  max-width: 30rem;
+}
+.message_error {
+  background: #900;
+}
+.message_success {
+  background: #090;
+}
+
+/*-- BOOKS LIST --*/
+.list {
+  max-width: 80rem;
+  border: none;
+  border-collapse: collapse;
+}
+.list__row:nth-child(2n+1) {
+  background: #f0f0f0;
+}
+.list__column {
+  border: .1rem solid #e0e0e0;
+  padding: 1rem;
+}
